@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot Deals - AliExpress Nigeria</title>
+  <link rel="stylesheet" href="style.css" />
+
+ 
+</head>
+<body>
+
+  <header>
+    <h1>🔥 Hot AliExpress Deals</h1>
+    <p>Top Beauty, Watches, Fashion, Bags, Jewelry & More - Delivered to Nigeria</p>
+  </header>
+
+  <div class="countdown" id="countdown">Loading countdown...</div>
+
+  <section class="section">
+    <h2>Beauty Picks</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://ae04.alicdn.com/kf/S227b1b0c88b548af9f88efaa726d5d66m.jpg" alt="Lashes">
+        <h3>Magnetic Eyelashes</h3>
+        <p>Reusable, waterproof & easy to apply.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Shop Now</a>
+      </div>
+      <div class="product">
+        <img src="https://ae01.alicdn.com/kf/Sfbeb5b5f2f314f0ab1ad0e25b95e8c96Z.jpg" alt="Brush">
+        <h3>Facial Brush</h3>
+        <p>Gentle exfoliation & pore cleaning.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Men’s Wear</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://ae01.alicdn.com/kf/Sb3e3138f51b94d02be09393e706b85e3G.jpg" alt="Shirt">
+        <h3>Casual Shirt</h3>
+        <p>Stylish, breathable & comfy.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Buy Shirt</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Jewelry</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://ae01.alicdn.com/kf/S3a6dfb91755c4b9e8a64d9bba8f69bfbN.jpg" alt="Necklace">
+        <h3>Gold-Plated Necklace</h3>
+        <p>Elegant and durable design.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Shop Jewelry</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Bags</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://ae01.alicdn.com/kf/Saa6aeb837f944cf8aa7c369849dd3c60v.jpg" alt="Bag">
+        <h3>Women’s Handbag</h3>
+        <p>Spacious & perfect for outings.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Buy Bag</a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Jewelry</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img loading="lazy" src="https://ae04.alicdn.com/kf/H665f3420102c493291db0bb6f493d206s.jpg" alt="Crystal Necklace">
+        <h3>Elegant Crystal Necklace</h3>
+        <p>Stunning crystal necklace perfect for evening outings and gifts.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Buy Now</a>
+      </div>
+      <div class="product">
+        <img loading="lazy" src="https://ae04.alicdn.com/kf/H6ccca44e10334a8c9fd7c9a201c7f1e0K.jpg" alt="Gold Plated Earrings">
+        <h3>18K Gold Plated Earrings</h3>
+        <p>Dazzling and lightweight earrings for everyday glam.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">See Offer</a>
+      </div>
+      <div class="product">
+        <img loading="lazy" src="https://ae04.alicdn.com/kf/S89efce5951e84d0f90e8e08d7f1aa5dbU.jpg" alt="Charm Bracelet">
+        <h3>Vintage Charm Bracelet</h3>
+        <p>Timeless charm bracelet with adjustable chain – perfect for gifting.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Shop Now</a>
+      </div>
+      <div class="product">
+        <img loading="lazy" src="https://ae04.alicdn.com/kf/H5a8d56c8231445d3a7c77cb8e3c46cf7z.jpg" alt="Silver Ring">
+        <h3>Sterling Silver Ring</h3>
+        <p>Classic silver ring with cubic zirconia – elegant and durable.</p>
+        <a href="https://s.click.aliexpress.com/e/_oCGyRPu" target="_blank">Grab Deal</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Sign Up for Deals</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 AliExpress Deals. All rights reserved.<br />
+    Delivery to Nigeria. Affiliate Links May Apply.
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/2348063617576" target="_blank">Chat on WhatsApp</a>
+
+  <script>
+    function startCountdown() {
+      const countdown = document.getElementById('countdown');
+      const end = new Date().getTime() + 24 * 60 * 60 * 1000;
+
+      const x = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = end - now;
+
+        if (distance < 0) {
+          clearInterval(x);
+          countdown.innerHTML = "Offer has ended!";
+          return;
+        }
+
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `Offer ends in: ${hours}h ${minutes}m ${seconds}s`;
+      }, 1000);
+    }
+
+    window.onload = startCountdown;
+  </script>
+
+</body>
+</html>
